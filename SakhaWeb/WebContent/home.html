@@ -1,0 +1,95 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>Sakha Tech</title>
+<style>
+.headers{
+    color: blue;
+    text-align: center;
+}
+#username{
+    font: italic;
+    color: darkcyan;
+}
+.tinputs {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+label{
+    color: blue;
+    padding: 20px 40px;
+
+
+    
+}
+
+</style>
+
+
+</head>
+<body>
+
+<h3 class="headers">Welcome to</h3>
+<h1 class="headers">Sakha Tech</h1>
+<form action="register" method="post">
+Email <input type="email" name="email" class="tinputs"><br>
+Name <input type="text" name="username" id="username" class="tinputs" required><br>
+Phone <input type="number" name="phone" class="tinputs"><br>
+Address<br>
+<textarea rows="4" name="address" class="tinputs"></textarea>
+<br>
+Gender
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<br>
+Country
+<select name="country">
+    <option>India</option>
+    <option>USA</option>
+    <option>UK</option>
+</select>
+<br>
+Languages:
+<ul style="list-style: none; display: inline-flex;">
+    <li>
+<input type="checkbox" value="English" name="lang" id="c1" checked>
+<label for="c1">English</label>
+    </li>
+    <li>
+<input type="checkbox" value="Hindi" name="lang" id="c2">
+<label for="c2">Hindi</label>
+    </li>
+    <li>
+<input type="checkbox" value="Kannada" name="lang" id="c3">
+<label for="c3">Kannada</label>
+</li>
+</ul>
+<br>
+
+<input type="submit" value="Register">
+
+
+</form>
+<h1 class="headers">India</h1>
+</body>
+</html>
